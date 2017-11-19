@@ -1,4 +1,4 @@
-/** 
+/**
 * Anax Flat theme.
 */
 @import url(modules.less);
@@ -17,5 +17,77 @@
 .site-logo-text-icon {
     img {
         vertical-align: bottom;
+    }
+}
+
+// Default style links
+
+.breadcrumb-list {
+
+    ul {
+        list-style-type: none;
+    }
+}
+
+// Default style for a and ul elements s
+
+a {
+    list-style-type: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+// Responsive design
+/*
+@media screen and (max-width: 900px) {
+    .site-logo-text {
+        width: 40%;
+    }
+
+    .navbar2 {
+        width: 50%;
+    }
+
+    .profile {
+        width: 10%;
+    }
+}
+*/
+
+@media screen and (max-width: 900px) {
+    .site-logo-text {
+        width: 90%;
+    }
+    .navbar2 {
+        display: none;
+    }
+
+    .sidebar {
+        width: 90%;
+        ul {
+            list-style: none;
+            overflow: hidden;
+        }
+        li {
+            float: left;
+        }
+        a {
+            text-decoration: none;
+            display: block;
+            padding: 5px;
+        }
+    }
+
+    .article {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-column {
+        width: 100%;
     }
 }
